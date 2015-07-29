@@ -1165,7 +1165,6 @@ function makeElementIntoAnchor(element, isCustomElement) {
   var anchor = document.createComment('anchor');
 
   if (isCustomElement) {
-    anchor.attributes = element.attributes;
     anchor.hasAttribute = function (name) {
       return element.hasAttribute(name);
     };
